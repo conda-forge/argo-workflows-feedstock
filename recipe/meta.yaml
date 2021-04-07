@@ -1,5 +1,5 @@
 {% set name = "argo-workflows" %}
-{% set version = "3.5.1" %}
+{% set version = "5.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d77b58a13f5a63515fe6ce2c9f2301cbb1c37fee9fe38d906ebd1e8fb557c935
+  sha256: 50aa8d9b1c9c54b457775a7d751a3c5c2fccdf91f28964834c6a597ebee69783
 
 build:
   number: 0
@@ -18,11 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python-kubernetes >=10.0
-    - mock
-    - python
+    - python >=3.6
+    - six
+    - python-dateutil
+    - urllib3
+    - certifi
 
 test:
   imports:
@@ -41,4 +43,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - hadim
+    - hajapy
