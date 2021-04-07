@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
     - six
     - python-dateutil
+    - urllib3
 
 test:
   imports:
