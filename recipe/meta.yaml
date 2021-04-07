@@ -24,6 +24,7 @@ requirements:
     - six
     - python-dateutil
     - urllib3
+    - certifi
 
 test:
   imports:
