@@ -39,7 +39,6 @@ about:
   home: https://pypi.org/project/argo-workflows/
   summary: Client for Argo Workflows
   license: Apache-2.0
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
 
 extra:
   recipe-maintainers:
