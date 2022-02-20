@@ -11,7 +11,7 @@ source:
   sha256: 50aa8d9b1c9c54b457775a7d751a3c5c2fccdf91f28964834c6a597ebee69783
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -43,4 +43,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - bchalk101
     - hajapy
