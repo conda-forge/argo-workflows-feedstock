@@ -1,5 +1,5 @@
 {% set name = "argo-workflows" %}
-{% set version = "5.0.0" %}
+{% set version = "6.3.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 50aa8d9b1c9c54b457775a7d751a3c5c2fccdf91f28964834c6a597ebee69783
+  sha256: 64dcd994b6445fc0bfffc24316ba59876a102a65c62f695c8e220093724da89b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,8 +28,8 @@ requirements:
 
 test:
   imports:
-    - argo.workflows
-    - argo.workflows.client
+    - argo_workflows
+    - argo_workflows.api_client
   commands:
     - pip check
   requires:
