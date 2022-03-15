@@ -28,8 +28,8 @@ requirements:
 
 test:
   imports:
-    - argo.workflows
-    - argo.workflows.client
+    - argo_workflows
+    - argo_workflows.api_client
   commands:
     - pip check
   requires:
