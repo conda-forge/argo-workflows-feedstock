@@ -1,5 +1,5 @@
 {% set name = "argo-workflows" %}
-{% set version = "6.5.0" %}
+{% set version = "6.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b08c03d69f11e1db023ba7db3361be6ce098c16a1bb0275c6ad54ccef2da43b9
+  sha256: 02c7d53dcbb3d7da233a9c0a9d00a118601590a3aaa08457b1587c06c475946f
 
 build:
   number: 0
